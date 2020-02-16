@@ -1,0 +1,519 @@
+/*-----Fonts-----*/
+@font-face {
+    font-family: FiraSans-Bold;
+    src: url('./assets/FiraSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: FiraSans-Light;
+    src: url('./assets/FiraSans-Light.ttf');
+}
+
+@font-face {
+    font-family: FiraSans-Regular;
+    src: url('./assets/FiraSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: FiraSans-Medium;
+    src: url('./assets/FiraSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: FiraSans-Thin;
+    src: url('./assets/FiraSans-Thin.ttf');
+}
+
+/*-----Global-----*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    transition: all .5s ease 0s;
+}
+
+html {
+    font-family: FiraSans-Regular, sans-serif;
+}
+
+body { 
+    width: 100%;
+    background-image: url(./images/BG_01.png);
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto; 
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+}
+
+h2 {
+    color: white;
+    font-size: 38px;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+li {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/*-----nav-----*/
+
+nav {
+    height: 100px;
+    line-height: 100px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a img {
+    vertical-align: middle;
+}
+
+nav a:nth-child(2) {
+    float: right;
+}
+
+#profile {
+    width: 25%;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+/*-----header-----*/
+
+header {
+    margin: 40px 0 160px 0;
+    text-align: center;
+}
+
+header p {
+    width: 45%;
+    margin: 30px auto 0 auto;
+}
+
+.Highlight {
+    color: #FF4A5E;
+}
+
+.blueHighlight {
+    color: #027bff;
+}
+
+/*-----work-----*/
+
+.work {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10em;
+}
+
+.work h5 {
+    color: #027bff;
+    font-weight: lighter;
+    font-size: 150%;
+}
+
+.work > .workText {
+    position: absolute;
+    font-family: FiraSans-Regular;
+    top: 85px;
+}
+
+.work > .workText > .underline {
+    display: block;
+    background-color: #027bff;
+    height: 2px;
+    width: 71px;
+    margin-top: 5px;
+}
+
+.work > .workImg {
+    width: 60%;
+    float: right;
+    -webkit-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, .06);
+    -moz-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, .06);
+    box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, .06);
+}
+
+.work ul {
+    position: absolute;
+    bottom: 0;
+    right: 62%;
+}
+
+.work ul li {
+    margin-top: 20px;
+}
+
+.work ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+/*----- work2 -----*/
+.work2 {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10em;
+}
+
+.work2 h5 {
+    color: #027bff;
+    font-weight: lighter;
+    font-size: 150%;
+}
+
+.work2 > .workText {
+    position: absolute;
+    font-family: FiraSans-Regular;
+    top: 85px;
+    right: 0;
+    text-align: right;
+}
+
+.work2 > .workText > .underline {
+    display: block;
+    background-color: #027bff;
+    height: 2px;
+    width: 71px;
+    margin-top: 5px;
+    float: right;
+}
+
+.work2 > .workImg {
+    width: 60%;
+    float: left;
+    -webkit-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, .06);
+    -moz-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, .06);
+    box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, .06);
+}
+
+.work2 ul {
+    position: absolute;
+    bottom: 0;
+    left: 62%;
+}
+
+.work2 ul li {
+    margin-top: 20px;
+}
+
+.work2 ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+/*-----whatIDO-----*/
+
+.whatIDo {
+    text-align: center;
+    margin: 100px 0 150px 0;
+    position: relative;
+}
+
+.whatIDo h1 {
+    color: #13A3FE;
+}
+
+.iAm {
+    color: #25272C;
+    font-size: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    top: -20px;
+    z-index: -1;
+}
+
+/*-----Skills-----*/
+.skills {
+    text-align: center;
+    margin: 100px 0 150px 0;
+}
+
+.skills p {
+    margin-bottom: 30px;
+}
+
+.skills img {
+    width: 5em;
+    margin: 0 15px;
+}
+
+.skills img:hover {
+    transform: scale(1.5);
+}
+
+/*----- designs -----*/
+
+.designs {
+    width: 100%;
+    text-align: center;
+}
+
+.designs a img {
+    margin: 1%;
+    width: 92%;
+}
+
+.designs-header {
+    text-align: center;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.designs-previews {
+    padding: 10px;
+    display: flex;
+}
+
+/*-----footer-----*/
+
+footer {
+    text-align: center;
+    margin: 30px 0;
+}
+
+footer p {
+    color: #FF4A5E;
+}
+
+/*-----Responsive-----*/
+
+@media only screen and (max-width: 991px) {
+    header p {
+        width: 100%;
+    }
+
+    .designs a img {
+        margin: 2%;
+        width: 96%;
+    }
+
+    .work > .workText {
+        top: 35px;
+    }
+
+    .work2 > .workText {
+        top: 35px;
+    }
+
+    .work > .workText > h1 {
+        font-size: 38px;
+    }
+
+    .work2 > .workText > h1 {
+        font-size: 38px;
+    }
+
+    .work h5 {
+        font-size: 120%;
+    }
+
+    .work2 h5 {
+        font-size: 120%;
+    }
+
+    .work ul li img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .work2 ul li img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .work > .workImg {
+        width: 50%;
+    }
+
+    .work2 > .workImg {
+        width: 50%;
+    }
+
+    .work ul {
+        right: 52%;
+    }
+
+    .work2 ul {
+        left: 52%;
+    }
+
+    .designs-previews {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    header {
+        width: 96%;
+        margin: 30px auto 100px auto;
+        text-align: left;
+    }
+
+    .whatIDo {
+        text-align: center;
+        width: 96%;
+        margin: 70px auto 100px auto;
+    }
+
+    .iAm {
+        font-size: 500%;
+    }
+
+    footer {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #profile {
+        width: 50%;
+    }
+
+    .work > .workText {
+        top: 25px;
+    }
+
+    .work2 > .workText {
+        top: 25px;
+    }
+
+    .work > .workText > h1 {
+        font-size: 32px;
+    }
+
+    .work2 > .workText > h1 {
+        font-size: 32px;
+    }
+
+    .work ul li img {
+        width: 24px;
+        margin: 0 10px;
+        height: 24px;
+    }
+
+    .work2 ul li img {
+        width: 24px;
+        margin: 0 10px;
+        height: 24px;
+    }
+
+    .work ul {
+        display: flex;
+    }
+
+    .work2 ul {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    #profile {
+        width: 100%;
+    }
+
+    .work {
+        margin-bottom: 8em;
+    }
+
+    .work2 {
+        margin-bottom: 8em;
+    }
+
+    .work > .workText {
+        top: 0;
+        position: absolute;
+    }
+
+    .work2 > .workText {
+        top: 0;
+        position: absolute;
+    }
+
+    .work > .workImg {
+        width: 100%;
+    }
+
+    .work2 > .workImg {
+        width: 100%;
+    }
+
+    .work > .workText {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .work2 > .workText {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .work > .workText > h1 {
+        font-size: 28px;
+    }
+
+    .work2 > .workText > h1 {
+        font-size: 28px;
+    }
+
+    .work ul li img {
+        width: 24px;
+        margin: 0 10px;
+        height: 24px;
+        top: 30px;
+    }
+
+    .work2 ul li img {
+        width: 24px;
+        margin: 0 10px;
+        height: 24px;
+        top: 30px;
+    }
+
+    .work ul {
+        display: flex;
+        right: 0;
+    }
+
+    .work2 ul {
+        display: flex;
+        left: 0;
+    }
+}

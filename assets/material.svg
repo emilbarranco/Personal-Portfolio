@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewBox="0 0 58 58">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bcbcbc"/>
+      <stop offset="1" stop-color="#747474"/>
+    </linearGradient>
+    <filter id="material" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#material)">
+    <path id="material-2" data-name="material" d="M20,0A20,20,0,1,0,40,20,20.009,20.009,0,0,0,20,0Zm0,1.25A18.659,18.659,0,0,1,32.448,6H7.55A18.662,18.662,0,0,1,20,1.25Zm-11.977,6H31.977L20,31.2ZM6,7.55v24.9a18.687,18.687,0,0,1,0-24.9Zm28,0a18.689,18.689,0,0,1,0,24.9ZM7.25,8.5,19.375,32.75H7.25Zm25.5,0V32.75H20.625L32.752,8.5ZM7.555,34H32.448a18.684,18.684,0,0,1-24.9,0Z" transform="translate(9 6)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
